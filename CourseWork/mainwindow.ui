@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>936</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Graph Builder</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/sovsp/Desktop/windowIcon.png</normaloff>C:/Users/sovsp/Desktop/windowIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow {
+background-color: rgb(152, 152, 152)
+}</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="toolLayout">
+      <item>
+       <widget class="QPushButton" name="addGraphButton">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#addGraphButton {
+border-image: url(:/images/C:/Users/sovsp/Desktop/addGraph.png); }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addTreeButton">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#addTreeButton {
+border-image:url(:/images/C:/Users/sovsp/Desktop/tree.png); }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="moveButton">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#moveButton {
+border-image: url(:/images/C:/Users/sovsp/Desktop/move.png); }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="drawButton">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#drawButton {
+border-image:url(:/images/C:/Users/sovsp/Desktop/draw.png); }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addNodeButton">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#addNodeButton {
+border-image:url(:/images/C:/Users/sovsp/Desktop/node.png); }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addEdgeButton">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#addEdgeButton {
+border-image:url(:/images/C:/Users/sovsp/Desktop/edge.png); }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="chooseAlgorithm">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#chooseAlgorithm {
+border-image:url(:/images/C:/Users/sovsp/Desktop/algorithm.png); }</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QWidget" name="graphWidget" native="true">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <layout class="QGridLayout" name="gridLayout"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="loadFromFile">
+   <property name="text">
+    <string>Загрузить из файла</string>
+   </property>
+   <property name="toolTip">
+    <string>Загрузить из файла</string>
+   </property>
+  </action>
+  <action name="findBridges">
+   <property name="text">
+    <string>Поиск мостов</string>
+   </property>
+  </action>
+  <action name="randomGraph">
+   <property name="text">
+    <string>Случайный граф</string>
+   </property>
+  </action>
+  <action name="maxFlow">
+   <property name="text">
+    <string>Максимальной поток</string>
+   </property>
+  </action>
+  <action name="dijicstra">
+   <property name="text">
+    <string>Алгоритм Дейкстры</string>
+   </property>
+  </action>
+  <action name="minimalSpanningTree">
+   <property name="text">
+    <string>Минимальное остовное дерево</string>
+   </property>
+  </action>
+  <action name="createNewGraph">
+   <property name="text">
+    <string>Новый граф</string>
+   </property>
+  </action>
+  <action name="showLCA">
+   <property name="text">
+    <string>Наименьший общий предок</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>C:/Users/sovsp/Desktop/draw.png</file>
+        <file>C:/Users/sovsp/Desktop/edge.png</file>
+        <file>C:/Users/sovsp/Desktop/move.png</file>
+        <file>C:/Users/sovsp/Desktop/node.png</file>
+        <file>C:/Users/sovsp/Desktop/addGraph.png</file>
+        <file>C:/Users/sovsp/Desktop/tree.png</file>
+        <file>C:/Users/sovsp/Desktop/algorithm.png</file>
+    </qresource>
+    <qresource prefix="/mainWindowIcon">
+        <file>C:/Users/sovsp/Desktop/windowIcon.png</file>
+    </qresource>
+</RCC>
